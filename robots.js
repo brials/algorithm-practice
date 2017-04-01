@@ -37,18 +37,23 @@ function botOptimizer(arr, div){
       this.check();
       return;
     }
-    if(arr[0]>div && !this.hasTasked && makingBots > 0 && !this.isTasking){
+    if(arr[0]>(div + arr[bots.length- botsHaveTasked]) && !this.hasTasked && makingBots > 0 && !this.isTasking){
+      console.log('start a task early', arr[0]);
       this.timeDone += arr.shift();
       this.hasTasked = true;
       this.isTasking = true;
+      botsHaveTasked += 1;
     } else if((bots.length + makingBots) < tasks){
+      console.log('make a bot');
       this.makingBot = true;
       this.timeDone += div;
       makingBots += 1;
     } else if(!this.hasTasked){
+      console.log('start a task because no need for bots', arr[0]);
       this.timeDone += arr.shift();
       this.hasTasked = true;
       this.isTasking = true;
+      botsHaveTasked += 1;
     }
   }
 
@@ -58,6 +63,7 @@ function botOptimizer(arr, div){
   var time = div;
   var bots = [new Bot(time), new Bot(time)]
   var makingBots = 0;
+  var botsHaveTasked = 0;
   var minTime = 0;
   while(tasks){
     bots.forEach(bot => {
