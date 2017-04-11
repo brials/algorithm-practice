@@ -16,6 +16,22 @@ SLL.prototype.unshift = function(node){
   this.head = node;
 }
 
+SLL.prototype.push = function(node){
+  if(!this.head){
+    this.head = node;
+    return
+  }
+  _findEnd(this.head);
+
+  function _findEnd(_node){
+    if(_node.next === null){
+      _node.next = node;
+    } else {
+      _findEnd(_node.next);
+    }
+  }
+}
+
 SLL.prototype.rearrange = function(){
   if(!this.head) return 'nothing in this list to rearrange';
   if(!this.head.next || !this.head.next.next) return 'this linked list is already arranged'
