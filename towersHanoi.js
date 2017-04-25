@@ -62,7 +62,6 @@ Towers.prototype.playGame = function(n, temp, target, current){
   }
 
   if(this[temp].peek() > this[target].peek() && this[target].peek() != null){
-    console.log('temp greater then target');
     count += this.playGame(n - this[target].peek(), temp, current, target);
   }
 
