@@ -1,6 +1,6 @@
 // Converts a URL Query String into an object map
-function convertQueryToMap(query) {
-if(!query) return {};
+function convertQueryToMap(query) { //eslint-disable-line
+  if(!query) return {};
   let resultMap = {}
   let queries = query.split('&');
   for(let i = 0; i < queries.length; i++){
