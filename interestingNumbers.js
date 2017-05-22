@@ -78,7 +78,7 @@ function decrementing(n){
 
   if(digits[digits.length - 1] === 0) return false;
   for(let i = 0; i < digits.length - 1; i++){
-    if(digits[i] === 0 && i != 0) digit[i] = 10;
+    if(digits[i] === 0 && i != 0) digits[i] = 10;
     if(digits[i] != digits[i+1] - 1){
       return false;
     }
