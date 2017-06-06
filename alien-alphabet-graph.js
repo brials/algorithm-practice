@@ -33,16 +33,6 @@ function createRules(words){
   }
 
   console.log('rules', rules);
-  // for(let i = 0; i< rules.length; i++){
-  //   let leftI = unique.indexOf(rules[i][0]);
-  //   let rightI = unique.indexOf(rules[i][1]);
-  //   if(leftI > rightI){
-  //     unique.splice(rightI, 0, unique.splice(leftI, 1)[0]);
-  //   }
-  // }
-  // 
-  //   return unique;
-  // }
 
 let test = ['baa', 'abcd', 'abca', 'cab', 'cad'];
 let test2 = ['xza', 'ayh', 'ples', 'plares', 'bhaaz', 'bnc'];
