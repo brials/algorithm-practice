@@ -67,7 +67,7 @@ Towers.prototype.playGame = function(n, temp, target, current){
 
   return count;
 }
-
+//needs some final testing
 let towers = new Towers();
 towers.buildTower(4);
 console.log(towers);
