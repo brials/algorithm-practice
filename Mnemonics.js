@@ -23,5 +23,3 @@ console.log('***********');
 mnemonics(2314);
 console.log('*************');
 mnemonics(1111);
-
-//not done yet.
