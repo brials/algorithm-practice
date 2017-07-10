@@ -10,3 +10,4 @@ binary converter
 history check.
 logic problem tic tac toe.
 tree traversal summation iteratively and recursively.
+tree traversal find max.
