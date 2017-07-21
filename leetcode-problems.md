@@ -21,3 +21,11 @@ Swap Nodes in Pairs   		38.1%	Medium
 
 21
 Merge Two Sorted Lists   		39.0%	Easy
+
+26
+Remove Duplicates from Sorted Array   		35.5%Easy
+
+33
+Search in Rotated Sorted Array   		32.1% 	Medium
+53
+Maximum Subarray   		39.5%	Easy
