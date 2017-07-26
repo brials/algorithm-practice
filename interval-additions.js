@@ -10,7 +10,6 @@ function addInterval(list, newInt){
   var intGreaterThenNew = false;
 
   list.forEach(int => {
-    console.log(int);
     let temp = [];
     if(holder[0]){
       temp[0] = holder;
@@ -26,18 +25,13 @@ function addInterval(list, newInt){
       newList.push(int); //new Interval is greater then both parts of the other
     }
     if(temp[0] <= int[1]){
-      console.log(1)
       if(temp[0] <= int[0]){
-        console.log(2)
         if(temp[1] > int[1]){
-          console.log(3)
           //larger of new interval is larger then larger of current interval
           holder[1] = newInt [1];
         }
         if(temp[1] <= int[1]){
-          console.log(4)
           if(temp[1] <= int[0]){ //new Interval is less then both parts of this interval
-            console.log(5, holder)
             if(temp[0] && temp[1]) {
               newList.push(temp);
             }
@@ -54,7 +48,6 @@ function addInterval(list, newInt){
       //newInt min is less less then current int max but not less then its min.
       holder[0] = int[0];
     }
-    console.log('end of for each iteration', holder, temp);
   })
   if(!intGreaterThenNew) newList.push(holder);
   return newList;

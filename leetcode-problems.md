@@ -29,3 +29,6 @@ Remove Duplicates from Sorted Array   		35.5%Easy
 Search in Rotated Sorted Array   		32.1% 	Medium
 53
 Maximum Subarray   		39.5%	Easy
+
+67
+Add Binary   		32.2%	Easy
