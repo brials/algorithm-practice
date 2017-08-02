@@ -7,8 +7,14 @@ Add Two Numbers   		27.6%	Medium
 
 Longest Substring Without Repeating Characters   		24.2%	Medium
 
+7
+Reverse Integer   		24.3%	Easy
+
 9
 Palindrome Number   		35.1%	Easy
+
+14
+Longest Common Prefix   		31.4%	Easy
 
 17
 Letter Combinations of a Phone Number   		34.2%	Medium
