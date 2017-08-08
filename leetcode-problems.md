@@ -33,6 +33,10 @@ Remove Duplicates from Sorted Array   		35.5%Easy
 
 33
 Search in Rotated Sorted Array   		32.1% 	Medium
+
+35
+Search Insert Position   		39.7%	Easy
+
 53
 Maximum Subarray   		39.5%	Easy
 
