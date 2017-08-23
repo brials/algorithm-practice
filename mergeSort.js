@@ -9,6 +9,7 @@ function mergeSort(arr){
     let arr2 = mergeSort(arr)
     return merge(arr1, arr2);
   } else{
+    console.log('in else', arr)
     return arr;
   }
 }
