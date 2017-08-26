@@ -26,13 +26,13 @@ function calcNFibMemo(n){
   let obj = {1 : 0, 2 : 1};
   function calcRecur(n){
     if(obj[n - 1] >= 0 && obj[n - 2] >= 0) {
-      obj[n] = obj[n - 1] + obj[n-2];
-    } else if(obj[n-1] >= 0){
-      obj[n] =  obj[n-1] + calcRecur(n-2);
-    } else if(obj[n-2] >= 0){
-      obj[n] = calcRecur(n-1) + obj[n-2];
+      obj[n] = obj[n - 1] + obj[n - 2];
+    } else if(obj[n - 1] >= 0){
+      obj[n] =  obj[n - 1] + calcRecur(n - 2);
+    } else if(obj[n - 2] >= 0){
+      obj[n] = calcRecur(n - 1) + obj[n - 2];
     } else {
-      obj[n] = calcRecur(n-1) + calcRecur(n-2);
+      obj[n] = calcRecur(n - 1) + calcRecur(n - 2);
     }
   }
   calcRecur(n);
